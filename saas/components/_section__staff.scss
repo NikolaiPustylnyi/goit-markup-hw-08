@@ -1,0 +1,144 @@
+.staff{
+    background-color: var(--background-stuff);
+    padding: 60px 15px;
+}
+
+.staff__title{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.staff__items{
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.staff__item:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.staff__item{
+    text-align: center;
+
+    background-color: var(--white);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.staff__img{
+    display: block;
+    width: 100%;
+}
+
+.staff__name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 10px 0;
+}
+
+.staff__position{
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--p-color);
+    margin: 0;
+}
+
+.staff__description{
+    padding: 30px 10px;
+}
+
+.staff__description p{
+    margin-bottom: 16px;
+}
+
+.staff__social-links{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.staff__social-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.staff__social-link{
+    background: transparent;
+    border-radius: 50%;
+    color: #AFB1B8;
+    transition: background-color var(--animation-options),
+                color var(--animation-options);
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover, 
+    &:focus{
+    background-color: var(--button-hover-color);
+    color: var(--white);
+    }
+    
+}
+
+
+
+.staff__social-link:not(:last-child){
+    margin-right: 10px;
+}
+
+/* screen more than 768px */
+
+@media screen and (min-width: 768px){
+
+    .staff__item{
+        width: calc((100% - 30px)/2);
+    }
+
+    .staff__item:nth-child(2n+1){
+        margin-right: 30px;
+    }
+
+    .staff__item:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+
+}
+
+/* screen more than 1200px */
+
+@media screen and (min-width: 1200px){
+    .staff{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .staff__title{
+        font-size: 36px;
+        line-height: 42px;
+        margin: 0 0 50px 0;
+    }
+
+    .staff__items{
+        flex-wrap: nowrap;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .staff__item:not(:last-child){
+        margin-right: 30px;
+    }
+
+    .staff__item:nth-child(n){
+        margin-bottom: 0;
+    }
+
+}

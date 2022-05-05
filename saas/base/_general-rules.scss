@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.flex{
+  display: flex;
+  padding: 0;
+  align-items: baseline;
+  }
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body{
+  font-family: var(--main-font-style);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}

@@ -1,0 +1,251 @@
+.footer{
+   padding: 60px 15px;
+   background-color: var(--background-footer);  
+}
+
+.footer--flex{
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.adress{
+   width: 100%;
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.social{
+   width: 100%;
+   text-align: center;
+   margin-bottom: 60px;
+}
+.footer__address{
+   font-style: normal;
+}
+.subscribe{
+   width: 100%;
+}
+
+.subscribe__form{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.input-wrapper{
+   width: 100%;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.logo{
+   display: inline-block;
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: 26px;
+   color: var(--main-text-color);
+}
+      
+   
+
+.logo--first-logo-part{
+   font-weight: 400;
+   color: var(--logo-first-part-color);
+   }
+
+.logo--footer{
+   color: var(--white);
+   margin-bottom: 20px;
+   font-size: 24px;
+   }
+
+
+.contacts__nav{
+   padding: 0;
+   margin: 0;
+}
+
+
+.contacts__adress, 
+.contacts__nav--email,
+.contacts__nav--phone{
+   font-style: normal;
+   color: var(--white);
+   margin: 0 0 9px 0;
+}
+
+.contacts__nav--email,
+.contacts__nav--phone{
+   color: rgba(255, 255, 255, 0.6);  
+} 
+
+.contacts__nav__item:not(:last-child){
+   margin-bottom: 9px;
+}
+
+.social-nav{
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   padding: 0;      
+}
+
+.social-nav__item{
+   background:#44454e;
+   border-radius: 50%;
+   transition: background-color var(--animation-options);
+
+      &:hover,
+      &:focus{
+         background-color: var(--button-hover-color);
+}
+
+
+}
+
+.social-nav__link{
+   display: flex;
+   color: var(--white);
+   width: 44px;
+   height: 44px;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.social-nav__item:not(:last-child){
+   margin-right: 10px;
+}
+
+.social-nav__icon{
+   height: 20px;
+   width: 20px;
+}
+
+
+.social__title{
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-style: normal;
+   color: var(--white);
+   margin: 0 0 20px 0;
+}
+
+.subscribe__button{
+   width: 200px;
+   height: 50px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 30px;
+   text-align: center;
+   color: var(--white);
+   background-color: var(--button);
+   align-items: center;
+   margin: 0 auto;
+   border: 1px solid transparent;
+   cursor: pointer;
+   transition: background-color var(--animation-options);
+}
+
+.subscribe__form--input{
+   width: 450px;
+   padding: 15px 16px;
+   background-color: transparent;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   color: var(--white);
+}
+
+.subscribe__icon{
+   width: 24px;
+   height: 24px;
+   margin-left: 10px;
+}
+
+.subscribe__title{
+   text-align: center;
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-style: normal;
+   color: var(--white);
+   margin: 0 0 20px 0;
+}
+
+.subscribe__submit{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+
+label:focus-visible,
+input:focus-visible,
+form:focus-visible {
+   outline: none;
+}
+
+
+@media screen and (min-width: 768px){
+   .social{
+      width: 50%;
+   }
+
+   .adress{
+      width: 50%;
+   }
+
+   .logo--footer{
+      margin-right: 0;
+   }
+}
+
+
+@media screen and (min-width: 1200px){
+   .footer--flex{
+      flex-wrap: nowrap;
+   }
+
+   .adress{
+      margin-right: 70px;
+      margin-bottom: 0;
+      text-align: left;
+  }
+
+  .logo{
+   margin-right: 93px;
+   font-size: 26px;
+  }
+
+  .social{
+   width: 206px;
+   margin-right: 93px;
+   margin-bottom: 0;
+   text-align: left;
+  }
+
+  .subscribe__form{
+     flex-wrap: nowrap;
+  }
+
+  .subscribe__form--input{
+   width: 358px;
+  }
+
+  .subscribe__title{
+   text-align: left;
+  }
+
+  .input-wrapper{
+     width: 358px;
+     margin-right: 12px;
+     margin-bottom: 0;
+  }
+}
+
+
