@@ -10,14 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-</head>
+    <script src="./js/menu.js" async></script>
+    <script src="./js/modal.js" async></script>
+
 </head>
 <body>
 
-<header class="header">
+<header class="header header--border">
     <div class="container">
         <div class="header flex">
-            <a href="#" class="logo"><span class="logo--first-part">Web</span>Studio</a>
+            <a href="./index.html" class="logo"><span class="logo--first-part">Web</span>Studio</a>
             <div class="burger-menu" data-menu-open>
                 <svg class="burger-menu__icon">
                     <use href="./img/sprite.svg#icon-burger-menu"></use>
@@ -135,9 +137,11 @@
         <h2 class="what-we-do__title">Чем мы занимаемся</h2>
         <ul class="what-we-do__items flex">
             <li class="what-we-do__item">
-                <img class="what-we-do__img" srcset="img/what_we_do-1.jpg 1x, img/what_we_do-1-x2.jpg 2x"
+                <img class="what-we-do__img" 
+                srcset="img/what_we_do-1.jpg 1x, img/what_we_do-1-x2.jpg 2x"
                 src="img/what_we_do-1.jpg" 
-                alt="what_we_do" width="370">
+                sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px"
+                alt="десктопные приложения">
                 <div class="what-we-do--overlay">
                     <p class="what-we-do__description">Десктопные приложения</p>
                 </div>
@@ -146,7 +150,7 @@
                 <img class="what-we-do__img"
                 srcset="img/what_we_do-2.jpg 1x, img/what_we_do-2-x2.jpg 2x"
                 src="img/what_we_do-2.jpg"
-                alt="what_we_do" width="370">
+                alt="мобильные приложения" width="370">
                 <div class="what-we-do--overlay">
                     <p class="what-we-do__description">Мобильные приложения</p>
                 </div>
@@ -155,7 +159,7 @@
                 <img class="what-we-do__img"
                 srcset="img/what_we_do-3.jpg 1x, img/what_we_do-3-x2.jpg 2x" 
                 src="img/what_we_do-3.jpg" 
-                alt="what_we_do" width="370">
+                alt="дизайнерские решения" width="370">
                 <div class="what-we-do--overlay">
                     <p class="what-we-do__description">Дизайнерские решения</p>
                 </div>
@@ -169,10 +173,18 @@
         <h2 class="staff__title">Наша команда</h2>
 
         <ul class="staff__items flex">
-            <li class="staff__item"><img class="staff__img" 
-                                    srcset="img/our_team_demyanenko.jpg 1x, img/our_team_demyanenko-x2.jpg 2x"
-                                    src="img/our_team_demyanenko.jpg" 
-                                    alt="Игорь Демьяненко" width="270">
+            <li class="staff__item">
+                <picture>
+                    <source 
+                    srcset="img/our_team_demyanenko_480.jpg"
+                    media="(max-width: 767px)">
+                    <source 
+                    srcset="img/our_team_demyanenko_768.jpg"
+                    media="(max-width: 1199px)">
+                    <img class="staff__img"            
+                    src="img/our_team_demyanenko.jpg" 
+                    alt="Игорь Демьяненко">
+                </picture>
 
                 <div class="staff__description">
                 <h3 class="staff__name">Игорь Демьяненко</h3>
@@ -193,10 +205,18 @@
                 </ul>
             </div>
             </li>
-            <li class="staff__item"><img class="staff__img"
-                                    srcset="img/our_team_repina.jpg 1x, img/our_team_repina-x2.jpg 2x" 
-                                    src="img/our_team_repina.jpg" 
-                                    alt="Ольга Репина" width="270">
+            <li class="staff__item">
+                <picture>
+                    <source 
+                    srcset="img/our_team_repina_480.jpg"
+                    media="(max-width: 767px)">
+                    <source 
+                    srcset="img/our_team_repina_768.jpg"
+                    media="(max-width: 1199px)">
+                    <img class="staff__img"
+                    src="img/our_team_repina.jpg" 
+                    alt="Ольга Репина" width="270">
+                </picture>
 
                 <div class="staff__description">
                 <h3 class="staff__name">Ольга Репина</h3>
@@ -217,10 +237,18 @@
                 </ul>
             </div>
             </li>
-            <li class="staff__item"><img class="staff__img" 
-                                    srcset="img/our_team_tarasov.jpg 1x, img/our_team_tarasov-x2.jpg 2x"
-                                    src="img/our_team_tarasov.jpg" 
-                                    alt="Николай Тарасов" width="270">
+            <li class="staff__item">
+                <picture>
+                    <source 
+                    srcset="img/our_team_tarasov_480.jpg"
+                    media="(max-width: 767px)">
+                    <source 
+                    srcset="img/our_team_tarasov_768.jpg"
+                    media="(max-width: 1199px)">
+                <img class="staff__img" 
+                    src="img/our_team_tarasov.jpg" 
+                    alt="Николай Тарасов" width="270">
+                </picture>
 
                 <div class="staff__description">
                 <h3 class="staff__name">Николай Тарасов</h3>
@@ -241,10 +269,18 @@
                 </ul>
             </div>
             </li>
-            <li class="staff__item"><img class="staff__img"
-                                    srcset="img/our_team_ermakov.jpg 1x, img/our_team_ermakov-x2.jpg 2x"                   
-                                    src="img/our_team_ermakov.jpg" 
-                                    alt="Михаил Ермаков" width="270">
+            <li class="staff__item">
+                <picture>
+                    <source 
+                    srcset="img/our_team_ermakov_480.jpg"
+                    media="(max-width: 767px)">
+                    <source 
+                    srcset="img/our_team_ermakov_768.jpg"
+                    media="(max-width: 1199px)">
+                    <img class="staff__img"                   
+                    src="img/our_team_ermakov.jpg" 
+                    alt="Михаил Ермаков">
+                </picture>
                 <div class="staff__description">
                 <h3 class="staff__name">Михаил Ермаков</h3>
                 <p class="staff__position">UI Designer</p>
@@ -407,6 +443,5 @@
 
 </body>
 
-<script src="./js/menu.js"></script>
-<script src="./js/modal.js"></script>
+
 </html>
