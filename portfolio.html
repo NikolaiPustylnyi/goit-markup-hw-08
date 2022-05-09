@@ -17,7 +17,7 @@
     <header class="header header--border">
         <div class="container">
             <div class="header flex">
-                <a href="./index.html" class="logo"><span class="logo--first-part">Web</span>Studio</a>
+                <a href="./index.html" class="logo logo--padding"><span class="logo--first-part">Web</span>Studio</a>
                 <div class="burger-menu" data-menu-open>
                     <svg class="burger-menu__icon">
                         <use href="./img/sprite.svg#icon-burger-menu"></use>
@@ -47,37 +47,36 @@
     
     
             </div>
+            <div class="mobile-menu" data-menu>
+                <div class="mobile-menu--flex">
+            <ul class="mobile-menu__items">
+                <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="./index.html">Студия</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__item-link mobile-menu__item-link--is-active" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#">Контакты</a></li>
+            </ul>
+            
+            <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contact "><a class="mobile-menu__contact--phone" href="tel:+380961111111">
+                    +38 096 111 11 11</a></li>
+                <li class="mobile-menu__contact "><a class="mobile-menu__contact--email" href="mailto:info@devstudio.com">
+                info@devstudio.com</a></li>
+            </ul>
+            
+            <ul class="mobile-menu__social">
+                <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Instagram</a></li>
+                <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Twitter</a></li>
+                <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Facebook</a></li>
+                <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">LinkedIn</a></li>
+            </ul>
+            </div>
+            
+            <button class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon"><use href="./img/sprite.svg#icon-close"></use></svg>
+            </button> 
+            
+            </div>
+        </header>
         </div>
-    
-        <div class="mobile-menu" data-menu>
-            <div class="mobile-menu--flex">
-        <ul class="mobile-menu__items">
-            <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="./index.html">Студия</a></li>
-            <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="./portfolio.html">Портфолио</a></li>
-            <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#">Контакты</a></li>
-        </ul>
-        
-        <ul class="mobile-menu__contacts">
-            <li class="mobile-menu__contact "><a class="mobile-menu__contact--phone" href="tel:+380961111111">
-                +38 096 111 11 11</a></li>
-            <li class="mobile-menu__contact "><a class="mobile-menu__contact--email" href="mailto:info@devstudio.com">
-            info@devstudio.com</a></li>
-        </ul>
-        
-        <ul class="mobile-menu__social">
-            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Instagram</a></li>
-            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Twitter</a></li>
-            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Facebook</a></li>
-            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">LinkedIn</a></li>
-        </ul>
-        </div>
-        
-        <button class="mobile-menu__close-btn" data-menu-close>
-            <svg class="mobile-menu__close-icon"><use href="./img/sprite.svg#icon-close"></use></svg>
-        </button> 
-        
-        </div>
-    </header>
    
     <main>
 
@@ -107,10 +106,10 @@
                         <div class="project-examples__img">
                         <picture>
                             <source 
-                            srcset="img/tehnokryak_480.jpg"
+                            srcset="img/tehnokryak_480.jpg 1x, img/tehnokryak_480@2x.jpg 2x"
                             media="(max-width: 767px)">
                             <source 
-                            srcset="img/tehnokryak_768.png"
+                            srcset="img/tehnokryak_768.png 1x, img/tehnokryak_768@2x.png 2x"
                             media="(max-width: 1199px)">
                         <img class="project-examples__img--block"
                         src="img/tehnokryak.jpg" 
@@ -132,10 +131,10 @@
                         <div class="project-examples__img">
                             <picture>
                                 <source 
-                                srcset="img/new-orlean_480.jpg"
+                                srcset="img/new-orlean_480.jpg 1x, img/new-orlean_480@2x.jpg 2x"
                                 media="(max-width: 767px)">
                                 <source 
-                                srcset="img/new-orlean_768.png"
+                                srcset="img/new-orlean_768.png 1x, img/new-orlean_768@2x.png 2x"
                                 media="(max-width: 1199px)">
                                 <img class="project-examples__img--block"
                                 src="img/new-orlean.jpg" 
@@ -157,10 +156,10 @@
                         <div class="project-examples__img">
                             <picture>
                                 <source 
-                                srcset="img/seafood_480.jpg"
+                                srcset="img/seafood_480.jpg 1x, img/seafood_480@2x.jpg 2x"
                                 media="(max-width: 767px)">
                                 <source 
-                                srcset="img/seafood_768.png"
+                                srcset="img/seafood_768.png 1x, img/seafood_768@2x.png 2x"
                                 media="(max-width: 1199px)">
                                 <img class="project-examples__img--block"
                                 src="img/seafood.jpg" 
@@ -181,10 +180,10 @@
                     <div class="project-examples__img">
                         <picture>
                             <source 
-                            srcset="img/prime_480.jpg"
+                            srcset="img/prime_480.jpg 1x, img/prime_480@2x.jpg 2x"
                             media="(max-width: 767px)">
                             <source 
-                            srcset="img/prime_768.png"
+                            srcset="img/prime_768.png 1x, img/prime_768@2x.png 2x"
                             media="(max-width: 1199px)">
                             <img class="project-examples__img--block"                   
                             src="img/prime.jpg" 
@@ -205,10 +204,10 @@
                         <div class="project-examples__img">
                             <picture>
                                 <source 
-                                srcset="img/boxes_480.jpg"
+                                srcset="img/boxes_480.jpg 1x, img/boxes_480@2x.jpg 2x"
                                 media="(max-width: 767px)">
                                 <source 
-                                srcset="img/boxes_768.png"
+                                srcset="img/boxes_768.png 1x, img/boxes_768@2x.png 2x"
                                 media="(max-width: 1199px)">
                                 <img class="project-examples__img--block"
                                 src="img/boxes.jpg" 
@@ -230,10 +229,10 @@
                         <div class="project-examples__img">
                             <picture>
                                 <source 
-                                srcset="img/inspirations-has-no-borders_480.jpg"
+                                srcset="img/inspirations-has-no-borders_480.jpg 1x, img/inspirations-has-no-borders_480@2x.jpg 2x"
                                 media="(max-width: 767px)">
                                 <source 
-                                srcset="img/inspirations-has-no-borders_768.png"
+                                srcset="img/inspirations-has-no-borders_768.png 1x, img/inspirations-has-no-borders_768@2x.png 2x"
                                 media="(max-width: 1199px)">
                                 <img class="project-examples__img--block"
                                 src="img/inspirations-has-no-borders.jpg" 
@@ -255,10 +254,10 @@
                         <div class="project-examples__img">
                             <picture>
                                 <source 
-                                srcset="img/limited-edition_480.jpg"
+                                srcset="img/limited-edition_480.jpg 1x, img/limited-edition_480@2x.jpg 2x"
                                 media="(max-width: 767px)">
                                 <source 
-                                srcset="img/limited-edition_768.png"
+                                srcset="img/limited-edition_768.png 1x, img/limited-edition_768@2x.png 2x"
                                 media="(max-width: 1199px)">
                                 <img class="project-examples__img--block" 
                                 src="img/limited-edition.jpg" 
@@ -280,10 +279,10 @@
                         <div class="project-examples__img">
                             <picture>
                                 <source 
-                                srcset="img/lab_480.jpg"
+                                srcset="img/lab_480.jpg 1x, img/lab_480@2x.jpg 2x"
                                 media="(max-width: 767px)">
                                 <source 
-                                srcset="img/lab_768.png"
+                                srcset="img/lab_768.png 1x, img/lab_768@2x.png 2x"
                                 media="(max-width: 1199px)">
                                 <img class="project-examples__img--block"
                                 src="img/lab.jpg" 
@@ -305,10 +304,10 @@
                         <div class="project-examples__img">
                             <picture>
                                 <source 
-                                srcset="img/growing-bussiness_480.jpg"
+                                srcset="img/growing-bussiness_480.jpg 1x, img/growing-bussiness_480@2x.jpg 2x"
                                 media="(max-width: 767px)">
                                 <source 
-                                srcset="img/growing-bussiness_768.png"
+                                srcset="img/growing-bussiness_768.png 1x, img/growing-bussiness_768@2x.png 2x"
                                 media="(max-width: 1199px)">
                                 <img class="project-examples__img--block"
                                 src="img/growing-bussiness.jpg" 

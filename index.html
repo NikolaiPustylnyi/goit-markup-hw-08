@@ -19,7 +19,7 @@
 <header class="header header--border">
     <div class="container">
         <div class="header flex">
-            <a href="./index.html" class="logo"><span class="logo--first-part">Web</span>Studio</a>
+            <a href="./index.html" class="logo logo--padding"><span class="logo--first-part">Web</span>Studio</a>
             <div class="burger-menu" data-menu-open>
                 <svg class="burger-menu__icon">
                     <use href="./img/sprite.svg#icon-burger-menu"></use>
@@ -49,36 +49,38 @@
 
 
         </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu--flex">
+        <ul class="mobile-menu__items">
+            <li class="mobile-menu__item"><a class="mobile-menu__item-link mobile-menu__item-link--is-active" href="./index.html">Студия</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#">Контакты</a></li>
+        </ul>
+        
+        <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contact "><a class="mobile-menu__contact--phone" href="tel:+380961111111">
+                +38 096 111 11 11</a></li>
+            <li class="mobile-menu__contact "><a class="mobile-menu__contact--email" href="mailto:info@devstudio.com">
+            info@devstudio.com</a></li>
+        </ul>
+        
+        <ul class="mobile-menu__social">
+            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Instagram</a></li>
+            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Twitter</a></li>
+            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Facebook</a></li>
+            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">LinkedIn</a></li>
+        </ul>
+        </div>
+        
+        <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon"><use href="./img/sprite.svg#icon-close"></use></svg>
+        </button> 
+        
+        </div>
     </div>
 
-    <div class="mobile-menu" data-menu>
-        <div class="mobile-menu--flex">
-    <ul class="mobile-menu__items">
-        <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="./index.html">Студия</a></li>
-        <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="./portfolio.html">Портфолио</a></li>
-        <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#">Контакты</a></li>
-    </ul>
     
-    <ul class="mobile-menu__contacts">
-        <li class="mobile-menu__contact "><a class="mobile-menu__contact--phone" href="tel:+380961111111">
-            +38 096 111 11 11</a></li>
-        <li class="mobile-menu__contact "><a class="mobile-menu__contact--email" href="mailto:info@devstudio.com">
-        info@devstudio.com</a></li>
-    </ul>
-    
-    <ul class="mobile-menu__social">
-        <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Instagram</a></li>
-        <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Twitter</a></li>
-        <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">Facebook</a></li>
-        <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-links">LinkedIn</a></li>
-    </ul>
-    </div>
-    
-    <button class="mobile-menu__close-btn" data-menu-close>
-        <svg class="mobile-menu__close-icon"><use href="./img/sprite.svg#icon-close"></use></svg>
-    </button> 
-    
-    </div>
 </header>
 
 <main>
@@ -175,10 +177,10 @@
             <li class="staff__item">
                 <picture>
                     <source 
-                    srcset="img/our_team_demyanenko_480.jpg"
+                    srcset="img/our_team_demyanenko_480.jpg 1x, img/our_team_demyanenko_480@2x.jpg 2x"
                     media="(max-width: 767px)">
                     <source 
-                    srcset="img/our_team_demyanenko_768.jpg"
+                    srcset="img/our_team_demyanenko_768.jpg 1x, img/our_team_demyanenko_768.jpg 2x"
                     media="(max-width: 1199px)">
                     <img class="staff__img"            
                     src="img/our_team_demyanenko.jpg" 
@@ -207,10 +209,10 @@
             <li class="staff__item">
                 <picture>
                     <source 
-                    srcset="img/our_team_repina_480.jpg"
+                    srcset="img/our_team_repina_480.jpg 1x, img/our_team_repina_480@2x.jpg 2x"
                     media="(max-width: 767px)">
                     <source 
-                    srcset="img/our_team_repina_768.jpg"
+                    srcset="img/our_team_repina_768.jpg 1x, img/our_team_repina_768@2x.jpg 2x"
                     media="(max-width: 1199px)">
                     <img class="staff__img"
                     src="img/our_team_repina.jpg" 
@@ -239,10 +241,10 @@
             <li class="staff__item">
                 <picture>
                     <source 
-                    srcset="img/our_team_tarasov_480.jpg"
+                    srcset="img/our_team_tarasov_480.jpg 1x, img/our_team_tarasov_480@2x.jpg 2x"
                     media="(max-width: 767px)">
                     <source 
-                    srcset="img/our_team_tarasov_768.jpg"
+                    srcset="img/our_team_tarasov_768.jpg 1x, img/our_team_tarasov_768@2x.jpg 2x"
                     media="(max-width: 1199px)">
                 <img class="staff__img" 
                     src="img/our_team_tarasov.jpg" 
@@ -271,10 +273,10 @@
             <li class="staff__item">
                 <picture>
                     <source 
-                    srcset="img/our_team_ermakov_480.jpg"
+                    srcset="img/our_team_ermakov_480.jpg 1x, img/our_team_ermakov_480@2x.jpg 2x"
                     media="(max-width: 767px)">
                     <source 
-                    srcset="img/our_team_ermakov_768.jpg"
+                    srcset="img/our_team_ermakov_768.jpg 1x, img/our_team_ermakov_768@2x.jpg 2x" 
                     media="(max-width: 1199px)">
                     <img class="staff__img"                   
                     src="img/our_team_ermakov.jpg" 
@@ -393,7 +395,7 @@
 </footer>
 
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
+    <div class="modal container--modal">
         <form class="modal-form" name="modal_form" autocomplete="on" novalidate>
             <p>Оставьте свои данные, мы вам перезвоним</p>
 
