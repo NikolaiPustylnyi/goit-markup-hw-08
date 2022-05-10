@@ -278,8 +278,26 @@
   @media screen and (max-width: 479px){
       .modal{
           width: 90%;
+          height: 95%;
       }
       .modal-form{
           padding: 30px 20px 20px 20px;
       }
+
+      .form-field input {
+        position: relative;
+        padding: 5px 12px 5px 42px;
+      }
+      .textarea-wrap {
+        margin-bottom: 10px;
+    }
+
+    .form-checkbox {
+        margin-bottom: 5px;
+    }
+
+    .form-field {
+        margin-bottom: 5px;
+    }
+
   }
